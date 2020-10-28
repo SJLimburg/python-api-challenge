@@ -61,3 +61,35 @@ Figure 4 - Wind Speed (mph) vs Latitude 19_Oct_2020
 
 
 ## VacationPy
+
+Now that the data for the cities from weatherPy has all the data for the next step; Finding the dream vacation spot based on weather. This requires converting the personal preferences into methods of selecting the desired data.
+
+Use Pandas to read the cities from the previopus step into a DataFrame then proceed.
+
+## Use Gmaps to map our dataset - follows the next steps to produce the desired map
+
+- Configure gmaps
+- Use the Lat and Lng as locations and Humidity as the weight
+- Add Heatmap layer to map
+
+#### GMAPS Humidity Heatmap
+Figure 2.1 - Humidity heat map
+
+![heatmap](https://github.com/SJLimburg/python-api-challenge/blob/main/output_data/Humidity%20Heat%20map.PNG)
+
+#### Create new DataFrame fitting weather criteria as defined by my preferences - also drop null values
+
+> Since I am a redhead I need some clouds but not so much that it signals rain
+> I also do not like too much heat so 65-75 is my range 
+> I need a little breeze too
+
+##### My Pandas code looked like this as a result fo my preferences
+
+>>  dream_df = my_city_df.loc[my_city_df['Max Temp'] < 75, :]
+>>  dream_df = dream_df.loc[dream_df['Max Temp'] > 65, :]
+>>  dream_df = dream_df.loc[dream_df['Wind Speed'] < 15, :]
+>>  dream_df = dream_df.loc[dream_df['Wind Speed'] > 2, :]
+>>  dream_df = dream_df.loc[dream_df['Cloudiness'] < 30, :]
+>>  dream_df = dream_df.loc[dream_df['Cloudiness'] > 10, :]
+>>  dream_df.dropna()
+
