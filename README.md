@@ -43,6 +43,16 @@ Figure 2 - Humidity (%) vs Latitude 19_Oct_2020
 
 ![HumidityvsLat](https://github.com/SJLimburg/python-api-challenge/blob/main/WeatherPy/Humidity%20(%25)%20vs%20Latitude%2019_Oct_2020.png)
 
-> Humiidty has no discernable relationship to latitude
+> Humidty has no discernable relationship to latitude
 
+#### The third plot compared Cloudiness (%) vs. Latitude
+Figure 3 - Cloudiness (%) vs Latitude 19_Oct_2020
 
+![cloudsvsLat](https://github.com/SJLimburg/python-api-challenge/blob/main/WeatherPy/Cloudiness%20(%25)%20vs%20Latitude%2019_Oct_2020.png)
+
+> Cloudiness shows no visible relationship to latitude - wind patterns and water features are more likely to affect cloud formation
+
+#### The fourth/final plot compared Wind Speed (mph) vs. Latitude
+Figure 4 - Wind Speed (mph) vs Latitude 19_Oct_2020
+
+![WindvsLat](https://github.com/SJLimburg/python-api-challenge/blob/main/WeatherPy/Wind%20Speed%20(mph)%20vs%20Latitude%2019_Oct_2020.png)
