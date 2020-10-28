@@ -85,12 +85,12 @@ Figure 2.1 - Humidity heat map
 
 ##### My Pandas code looked like this as a result of my weather preferences - others may prefer more stillness or higher temperatires
 
->>  dream_df = my_city_df.loc[my_city_df['Max Temp'] < 75, :]
->>  dream_df = dream_df.loc[dream_df['Max Temp'] > 65, :]
->>  dream_df = dream_df.loc[dream_df['Wind Speed'] < 15, :]
->>  dream_df = dream_df.loc[dream_df['Wind Speed'] > 2, :]
->>  dream_df = dream_df.loc[dream_df['Cloudiness'] < 30, :]
->>  dream_df = dream_df.loc[dream_df['Cloudiness'] > 10, :]
+>>  dream_df = my_city_df.loc[my_city_df['Max Temp'] < 75, :]\n
+>>  dream_df = dream_df.loc[dream_df['Max Temp'] > 65, :]\n
+>>  dream_df = dream_df.loc[dream_df['Wind Speed'] < 15, :]\n
+>>  dream_df = dream_df.loc[dream_df['Wind Speed'] > 2, :]\n
+>>  dream_df = dream_df.loc[dream_df['Cloudiness'] < 30, :]\n
+>>  dream_df = dream_df.loc[dream_df['Cloudiness'] > 10, :]\n
 >>  dream_df.dropna()
 
 #### Weather is important and so is a place to stay. The next step looked for hotels using google nearby API.
