@@ -56,3 +56,8 @@ Figure 3 - Cloudiness (%) vs Latitude 19_Oct_2020
 Figure 4 - Wind Speed (mph) vs Latitude 19_Oct_2020
 
 ![WindvsLat](https://github.com/SJLimburg/python-api-challenge/blob/main/WeatherPy/Wind%20Speed%20(mph)%20vs%20Latitude%2019_Oct_2020.png)
+
+> Wind speed is relatively mild across all data points at this date in October 
+
+
+## VacationPy
