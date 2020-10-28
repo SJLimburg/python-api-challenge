@@ -83,7 +83,7 @@ Figure 2.1 - Humidity heat map
 > I also do not like too much heat so 65-75 is my range 
 > I need a little breeze too
 
-##### My Pandas code looked like this as a result fo my preferences
+##### My Pandas code looked like this as a result of my weather preferences - others may prefer more stillness or higher temperatires
 
 >>  dream_df = my_city_df.loc[my_city_df['Max Temp'] < 75, :]
 >>  dream_df = dream_df.loc[dream_df['Max Temp'] > 65, :]
@@ -93,3 +93,35 @@ Figure 2.1 - Humidity heat map
 >>  dream_df = dream_df.loc[dream_df['Cloudiness'] > 10, :]
 >>  dream_df.dropna()
 
+#### Weather is important and so is a place to stay. The next step looked for hotels using google nearby API.
+
+The first step used numpy to populate Nan values into a new "Hotel" field in the Pandas DataFrame
+Next parameters were set  to search for hotels within 5000 meters of our lat/Lng values.
+Using Google Places API for each city's coordinates, the first Hotel result was stored into the DataFrame.
+Finally using HTML code we set up an info_box_template to record data into markers on top of the heatmap and generate the markers
+
+# Using the template add the hotel marks to the heatmap
+
+> info_box_template = """
+> <dl>
+> <dt>Name</dt><dd>{Hotel}</dd>
+> <dt>City</dt><dd>{City}</dd>
+> <dt>Country</dt><dd>{Country}</dd>
+> </dl>
+> """
+
+> hotel_info = [info_box_template.format(**row) for index, row in hotel_df.iterrows()]
+> locations = hotel_df[["Lat", "Lng"]]
+
+- Add marker layer ontop of heat map
+- Assign the marker layer to a variable
+- Add the layer to the map
+
+markers = gmaps.marker_layer(locations,info_box_content = hotel_info)
+heat_map.add_layer(markers)
+heat_map
+
+# Display figure 2.2
+https://github.com/SJLimburg/python-api-challenge/blob/main/output_data/vacation%20map2.PNG
+
+![Vacation](https://github.com/SJLimburg/python-api-challenge/blob/main/output_data/vacation%20map2.PNG)
