@@ -28,7 +28,7 @@ The pandas dataframe was used to populate the weather characteristics vs. latitu
 
 Figure 1 - Maximum Temperature vs Latitude 19_Oct_2020
 
-![MaxTempvsLat](http://localhost:8888/files/WeatherPy/Maximum%20Temperature%20vs%20Latitude%2019_Oct_2020.png)
+![MaxTempvsLat](https://github.com/SJLimburg/python-api-challenge/blob/main/WeatherPy/Maximum%20Temperature%20vs%20Latitude%2019_Oct_2020.png)
 
 - Maximum daily temperature in October is higher near the equator, as one would suspect!
 - The northern hemisphere has many more cities than the southern hemisphere, which is shown by the asymmetry of the data points
