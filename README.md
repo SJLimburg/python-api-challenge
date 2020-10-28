@@ -100,7 +100,7 @@ Next parameters were set  to search for hotels within 5000 meters of our lat/Lng
 Using Google Places API for each city's coordinates, the first Hotel result was stored into the DataFrame.
 Finally using HTML code we set up an info_box_template to record data into markers on top of the heatmap and generate the markers
 
-# Using the template add the hotel marks to the heatmap
+#### Using the template add the hotel marks to the heatmap
 
 > info_box_template = """
 > <dl>
@@ -117,11 +117,10 @@ Finally using HTML code we set up an info_box_template to record data into marke
 - Assign the marker layer to a variable
 - Add the layer to the map
 
-markers = gmaps.marker_layer(locations,info_box_content = hotel_info)
-heat_map.add_layer(markers)
-heat_map
+>>  markers = gmaps.marker_layer(locations,info_box_content = hotel_info)
+>>  heat_map.add_layer(markers)
+>>  heat_map
 
-# Display figure 2.2
-https://github.com/SJLimburg/python-api-challenge/blob/main/output_data/vacation%20map2.PNG
+#### Display figure 2.2 - Off to Madagascar!
 
 ![Vacation](https://github.com/SJLimburg/python-api-challenge/blob/main/output_data/vacation%20map2.PNG)
