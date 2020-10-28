@@ -79,9 +79,9 @@ Figure 2.1 - Humidity heat map
 
 #### Create new DataFrame fitting weather criteria as defined by my preferences - also drop null values
 
-> Since I am a redhead I need some clouds but not so much that it signals rain
-> I also do not like too much heat so 65-75 is my range 
-> I need a little breeze too
+> - Since I am a redhead I need some clouds but not so much that it signals rain
+> - I also do not like too much heat so 65-75 is my range 
+> - I need a little breeze too
 
 ##### My Pandas code looked like this as a result of my weather preferences - others may prefer more stillness or higher temperatires
 
@@ -117,9 +117,11 @@ Finally using HTML code we set up an info_box_template to record data into marke
 - Assign the marker layer to a variable
 - Add the layer to the map
 
->>  markers = gmaps.marker_layer(locations,info_box_content = hotel_info)
->>  heat_map.add_layer(markers)
->>  heat_map
+Here is a code snippet
+
+-  markers = gmaps.marker_layer(locations,info_box_content = hotel_info)
+-  heat_map.add_layer(markers)
+-  heat_map
 
 #### Display figure 2.2 - Off to Madagascar!
 
